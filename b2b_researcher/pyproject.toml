@@ -1,0 +1,18 @@
+[project]
+name = "b2b_researcher"
+version = "0.0.1"
+description = "Research target company from perspective of user company"
+authors = [
+    { name = "Name <Email>" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.10"
+
+dependencies = [
+    "agentstack[langgraph]>=0.3.0",
+    "exa-py>=1.7.0",
+    "firecrawl-py>=1.6.4",
+    "langchain-openai>=0.3.0",
+    "mem0ai>=0.1.35",
+    "requests>=2.30",
+]

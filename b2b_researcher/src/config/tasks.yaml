@@ -1,0 +1,7 @@
+scrape_single_page:
+  description: >-
+    Scrape the text contents of https://nofluffselling.com/
+  expected_output: >-
+    A neatly organized, HTML-free, markdown of the scraped text content of the webpage.
+  agent: >-
+    web_scraper

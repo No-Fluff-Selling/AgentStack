@@ -1,0 +1,13 @@
+{
+    "framework": "langgraph",
+    "tools": [
+        "firecrawl",
+        "neon",
+        "exa",
+        "perplexity",
+        "mem0"
+    ],
+    "agentstack_version": "0.3.0",
+    "template": "b2b_researcher",
+    "template_version": "4"
+}
