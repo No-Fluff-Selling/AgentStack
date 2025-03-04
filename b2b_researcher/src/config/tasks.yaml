@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 fetch_sitemap_urls:
   description: >
     Given {user_url}, clean the URL (remove protocol and trailing slashes, replace dots with underscores)
@@ -22,3 +23,12 @@ save_contents_to_db:
   expected_output: >
     A confirmation message indicating that the database table was created/updated and that the rows were inserted.
   agent: sitemap_agent
+=======
+scrape_single_page:
+  description: >-
+    Scrape the text contents of https://nofluffselling.com/
+  expected_output: >-
+    A neatly organized, HTML-free, markdown of the scraped text content of the webpage.
+  agent: >-
+    web_scraper
+>>>>>>> 3252885aeb05c6aeec4a6f96d50df7e2f0974956

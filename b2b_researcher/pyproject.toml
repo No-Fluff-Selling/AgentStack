@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [build-system]
 requires = ["hatchling"]
 build-backend = "hatchling.build"
@@ -6,18 +7,36 @@ build-backend = "hatchling.build"
 name = "b2b-researcher"
 version = "0.1.0"
 description = "B2B Researcher using LangGraph"
+=======
+[project]
+name = "b2b_researcher"
+version = "0.0.1"
+description = "Research target company from perspective of user company"
+>>>>>>> 3252885aeb05c6aeec4a6f96d50df7e2f0974956
 authors = [
     { name = "Name <Email>" }
 ]
 license = { text = "MIT" }
+<<<<<<< HEAD
 requires-python = ">=3.11"
+=======
+requires-python = ">=3.10"
+>>>>>>> 3252885aeb05c6aeec4a6f96d50df7e2f0974956
 
 dependencies = [
     "agentstack[langgraph]>=0.3.0",
     "exa-py>=1.7.0",
+<<<<<<< HEAD
     "langchain-openai>=0.3.0",
     "requests>=2.30",
 ]
 
 [tool.hatch.build.targets.wheel]
 packages = ["src"]
+=======
+    "firecrawl-py>=1.6.4",
+    "langchain-openai>=0.3.0",
+    "mem0ai>=0.1.35",
+    "requests>=2.30",
+]
+>>>>>>> 3252885aeb05c6aeec4a6f96d50df7e2f0974956

@@ -1,5 +1,9 @@
 # b2b_researcher
+<<<<<<< HEAD
 Deeply research a company and store the findings.
+=======
+Research target company from perspective of user company
+>>>>>>> 3252885aeb05c6aeec4a6f96d50df7e2f0974956
 
 ## How to build your LangGraph Agent
 ### With the CLI
