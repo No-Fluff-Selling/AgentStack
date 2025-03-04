@@ -1,0 +1,32 @@
+#user_url: "https://data.world/"
+user_url: "https://bigeye.com/"
+target_url: "https://aramark.com/"
+user_email: "chris@nofluffselling.com"
+submission_id: local_dev
+
+# LLM API configuration
+llm:
+  openrouter:
+    site_url: ""
+    site_name: ""
+  
+rag:
+  # Iteration controls
+  max_iterations: 3
+  queries_per_batch: 3
+  docs_per_query: 2
+  
+  # Verification settings
+  verification:
+    enabled: false
+    max_attempts: 2
+    required_sections:
+      - company_overview
+      - financials
+      - leadership
+  
+  # Query generation
+  query_strategy: adaptive
+  fallback_strategies:
+    - keyword_expansion
+    - temporal_filtering

@@ -1,0 +1,8 @@
+{
+    "include": ["."],
+    "exclude": ["**/__pycache__"],
+    "venvPath": "/Users/simon/Library/Caches/pypoetry/virtualenvs",
+    "venv": "agent-api-KDpygTv7-py3.13",
+    "reportMissingImports": true,
+    "reportMissingTypeStubs": false
+}

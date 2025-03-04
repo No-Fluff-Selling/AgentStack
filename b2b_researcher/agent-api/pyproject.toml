@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "agent-api"
+version = "0.1.0"
+description = ""
+authors = ["Simon Szalai <simon.szalai@gmail.com>"]
+readme = "README.md"
+packages = [{include = "agent_api"}]
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+fastapi = ">=0.104.0"
+uvicorn = ">=0.24.0"
+pydantic = ">=2.4.2"
+aiohttp = ">=3.9.0"
+websockets = ">=12.0"
+python-dotenv = ">=1.0.0"
+psycopg2-binary = ">=2.9.9"
+
+[tool.poetry.group.dev.dependencies]
+pyright = "^1.1.393"
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"

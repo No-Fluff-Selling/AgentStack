@@ -1,0 +1,24 @@
+fetch_sitemap_urls:
+  description: >
+    Given {user_url}, clean the URL (remove protocol and trailing slashes, replace dots with underscores)
+    to compute a table name and fetch all URLs from the website's sitemap. Return a comma-separated string of URLs
+    along with the computed table name.
+  expected_output: >
+    A dictionary with keys "sitemap_urls" (comma-separated URLs) and "table_name" (cleaned from the user URL).
+  agent: sitemap_agent
+
+fetch_page_contents:
+  description: >
+    Use the comma-separated URLs provided in {sitemap_urls} to call Exa's get_contents API.
+    Retrieve the text contents and metadata for each page.
+  expected_output: >
+    A JSON object (under key "page_contents") containing results from Exa's API.
+  agent: sitemap_agent
+
+save_contents_to_db:
+  description: >
+    Using Neon's API, create (if it does not exist) a new table named {table_name} and save each result
+    from Exa's API (found in {page_contents}) as a row in that table.
+  expected_output: >
+    A confirmation message indicating that the database table was created/updated and that the rows were inserted.
+  agent: sitemap_agent

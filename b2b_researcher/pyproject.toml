@@ -1,0 +1,23 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "b2b-researcher"
+version = "0.1.0"
+description = "B2B Researcher using LangGraph"
+authors = [
+    { name = "Name <Email>" }
+]
+license = { text = "MIT" }
+requires-python = ">=3.11"
+
+dependencies = [
+    "agentstack[langgraph]>=0.3.0",
+    "exa-py>=1.7.0",
+    "langchain-openai>=0.3.0",
+    "requests>=2.30",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src"]

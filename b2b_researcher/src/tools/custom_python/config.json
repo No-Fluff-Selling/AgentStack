@@ -1,0 +1,17 @@
+{
+    "name": "custom_python",
+    "category": "custom",
+
+    "tools": ["fetch_sitemap_urls"],
+    "url": "https://localhost",
+    "cta": "Custom Python tools.",
+
+    "env": {},
+    "packages": [
+      "requests",
+      "bs4",
+      "lxml"
+    ],
+    "post_install": "",
+    "post_remove": ""
+  }

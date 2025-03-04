@@ -1,0 +1,20 @@
+fastapi>=0.104.0
+uvicorn>=0.24.0
+pydantic>=2.4.2
+aiohttp>=3.9.0
+websockets>=12.0
+python-dotenv>=1.0.0
+psycopg2-binary>=2.9.9
+langgraph>=0.2.69
+langchain>=0.1.0
+langchain-openai>=0.0.2
+langchain-community>=0.0.10
+faiss-cpu>=1.7.4
+typing-extensions>=4.8.0
+agentstack  # Your custom package
+python-dateutil>=2.8.2
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+python-multipart>=0.0.6  # Required for FastAPI form handling
+lxml>=4.9.3  # Required for BeautifulSoup XML parsing
+neon-api>=0.1.0  # Required for Neon database operations

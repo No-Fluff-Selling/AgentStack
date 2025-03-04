@@ -1,0 +1,40 @@
+# fly.toml app configuration file generated for agentapi on 2025-02-06T11:54:38-06:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = 'agentapi'
+primary_region = 'atl'
+
+[build]
+  dockerfile = "Dockerfile"
+
+[http_service]
+  internal_port = 8000
+  force_https = true
+  auto_stop_machines = false
+  auto_start_machines = true
+  min_machines_running = 1
+  max_machines_running = 1
+  processes = ['app']
+  protocol = "tcp"
+
+  [[http_service.headers]]
+    Upgrade = ["websocket"]
+    Connection = ["upgrade"]
+
+  [[http_service.checks]]
+    grace_period = "30s"
+    interval = "300s"
+    method = "GET"
+    timeout = "10s"
+    path = "/health"
+    protocol = "http"
+
+[[vm]]
+  cpu_kind = "shared"
+  cpus = 2
+  memory = "2gb"
+
+[deploy]
+  strategy = "immediate"
